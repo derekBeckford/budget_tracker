@@ -32,7 +32,8 @@ function uploadTransactions() {
   getAll.onsuccess = function () {
     if (getAll.result.length > 0) {
       fetch("api/transaction", {
-        method: "GET",
+        method: "POST",
+        body: JSON.stringify(getAll.result),
         header: {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
