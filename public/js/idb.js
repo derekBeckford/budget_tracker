@@ -53,7 +53,7 @@ function uploadTransactions() {
           alert("All transactions have been submitted!");
         })
         .catch((err) => {
-          console.log(err.Error.message);
+          console.log(json.stringify(err));
         });
     }
   };
