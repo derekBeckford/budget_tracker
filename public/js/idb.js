@@ -35,7 +35,7 @@ function uploadTransactions() {
         method: "POST",
         body: JSON.stringify(getAll.result),
         header: {
-          Accept: "application/json, text/plain, */*",
+          Accept: "application/json",
           "Content-Type": "application/json",
         },
       })
@@ -53,7 +53,7 @@ function uploadTransactions() {
           alert("All transactions have been submitted!");
         })
         .catch((err) => {
-          console.log(JSON.stringify(err));
+          console.log(err);
         });
     }
   };
