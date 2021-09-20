@@ -27,11 +27,6 @@
   
   Requires no installation to use.
 
-  ## Usage 
-  💻
-  
-  none
-
   ##  License 
   ![badge](https://img.shields.io/badge/license-npm-brightgreen) </br>
   📎
